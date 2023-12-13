@@ -1,0 +1,195 @@
+.main {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+  background: url("./images/bg-bottom.svg") bottom left no-repeat,
+    url("./images/bg-top.svg") top right no-repeat;
+  background-color: hsl(240, 78%, 98%);
+}
+.header {
+  /* background-color: aqua; */
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  /* background-color: aquamarine; */
+  width: 900px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 25px;
+}
+.price {
+  color: hsl(232, 13%, 33%);
+  font-size: 24px;
+  font-weight: bold;
+}
+.switch {
+  color: hsl(234, 14%, 74%);
+}
+
+.box {
+  background-color: white;
+  height: 330px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 13px 0;
+  border-radius: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* font-size: 13px;
+  font-weight: bold; */
+}
+
+#professional {
+  padding: 25px 0 25px 0;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+}
+
+.dollar {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+.dollar > h2 {
+  color: hsl(232, 13%, 33%);
+}
+.line {
+  border-top: 1px solid black;
+  width: 80%;
+  opacity: 40%;
+}
+.pline {
+  border-top: 1px solid white;
+  opacity: 40%;
+}
+.pricehead {
+  color: hsl(232, 13%, 33%);
+  font-size: 40px;
+  font-weight: bold;
+  /* margin-top: -5px; */
+}
+.proPricehead {
+  font-size: 40px;
+  font-weight: bold;
+  /* margin-top: -5px; */
+}
+
+#pdollor {
+  color: white;
+  font-weight: bold;
+}
+hr {
+  color: rgb(200, 196, 196);
+  margin: -4px;
+}
+
+button {
+  margin-top: 12px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 8px 60px 8px 60px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pbutton {
+  background-image: linear-gradient(to right, white, white);
+  color: hsl(236, 72%, 79%);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* #basic:hover {
+  padding: 25px 0 25px 0;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+} */
+
+/* switch button */
+.switch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input {
+  margin: 0 25px 0 25px;
+}
+.switch {
+  position: relative;
+  /* display: inline-block; */
+  width: 45px;
+  height: 25px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(236, 72%, 79%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
