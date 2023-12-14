@@ -180,9 +180,13 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-input {
-  margin: 0 25px 0 25px;
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0 27px 0 27px;
 }
+
 .switch {
   position: relative;
   /* display: inline-block; */
