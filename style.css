@@ -31,14 +31,7 @@
   align-items: center;
   color: hsl(233, 13%, 49%);
   margin-bottom: 60px;
-}
-.price {
-  color: hsl(232, 13%, 33%);
-  font-size: 30px;
-  font-weight: bold;
-}
-.switch {
-  color: hsl(234, 14%, 74%);
+  gap: 1px;
 }
 
 .box {
@@ -51,15 +44,16 @@
   align-items: center;
   padding: 10px 0 13px 0;
   border-radius: 3%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* font-size: 13px;
-  font-weight: bold; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 10px 5px;
 }
 
-#professional {
-  padding: 25px 0 25px 0;
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  color: white;
+.price {
+  color: hsl(232, 13%, 33%);
+  font-size: 30px;
+  font-weight: bold;
+}
+.switch {
+  color: hsl(234, 14%, 74%);
 }
 
 .dollar {
@@ -71,30 +65,17 @@
   color: hsl(232, 13%, 33%);
 }
 .line {
-  border-top: 1px solid black;
+  border-top: 1px solid hsl(233, 13%, 49%);
   width: 80%;
   opacity: 40%;
 }
-.pline {
-  border-top: 1px solid white;
-  opacity: 40%;
-}
+
 .pricehead {
   color: hsl(232, 13%, 33%);
   font-size: 50px;
   font-weight: bold;
-  /* margin-top: -5px; */
-}
-.proPricehead {
-  font-size: 50px;
-  font-weight: bold;
-  /* margin-top: -5px; */
 }
 
-#pdollor {
-  color: white;
-  font-weight: bold;
-}
 hr {
   color: rgb(200, 196, 196);
   margin: -4px;
@@ -123,11 +104,75 @@ button {
   font-weight: bold;
 }
 
-/* #basic:hover {
+/* hover for basic */
+#basic:hover {
   padding: 25px 0 25px 0;
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
-} */
+}
+#basic:hover h1 {
+  color: white;
+}
+
+#basic:hover h2 {
+  color: white;
+}
+
+#basic:hover > hr {
+  border-top: 1px solid white;
+  opacity: 40%;
+}
+
+#basic:hover > button {
+  background-image: linear-gradient(to right, white, white);
+  color: hsl(236, 72%, 79%);
+}
+/* hover for professinoal */
+#professional:hover {
+  padding: 25px 0 25px 0;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+}
+#professional:hover h1 {
+  color: white;
+}
+
+#professional:hover h2 {
+  color: white;
+}
+
+#professional:hover > hr {
+  border-top: 1px solid white;
+  opacity: 40%;
+}
+
+#professional:hover > button {
+  background-image: linear-gradient(to right, white, white);
+  color: hsl(236, 72%, 79%);
+}
+
+/* hover for master */
+
+#master:hover {
+  padding: 25px 0 25px 0;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+}
+#master:hover h1 {
+  color: white;
+}
+#master:hover h2 {
+  color: white;
+}
+#master:hover > hr {
+  border-top: 1px solid white;
+  opacity: 40%;
+}
+
+#master:hover > button {
+  background-image: linear-gradient(to right, white, white);
+  color: hsl(236, 72%, 79%);
+}
 
 /* switch button */
 .switch {
@@ -193,4 +238,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* for mobile  */
+@media only screen and (max-width: 375px) {
+  * {
+    width: 300px;
+  }
+  .main {
+    height: 1800px;
+  }
+  .section {
+    flex-direction: column;
+    height: 1400px;
+    justify-content: space-between;
+  }
 }
